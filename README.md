@@ -1,7 +1,5 @@
-# 632HW1
-632 HW1 Repo
 ---
-title: "HW2"
+title: "Sarah Mirza HW2"
 output:
   html_document:
     df_print: paged
@@ -23,11 +21,7 @@ Grading: 20 points
 - 15 points for exercise 1
 - 5 points for exercise 2
 
-```{r}
-install.packages("testthat")
-install.packages("assertthat")
-install.packages("devtools")
-```
+
 
 ```{r setup}
 library(tidyverse)
@@ -78,7 +72,7 @@ plot_cp_hw1(est, iso_code = 4)
 
 # HW1 exercises
 
-In HW2, we set up a package and add the plotting function, called `plot_cp`. We will add observed mCPR data (from surveys) and some other functionality to the visualization.
+In HW2, we set up a package and add the plotting function, called `plot_cp'. We will add observed mCPR data (from surveys) and some other functionality to the visualization.
 
 
 ## Exercise 1: extend function plot_cp() to also plot observed data
@@ -100,6 +94,8 @@ The second plot shows mCPR (%) among married women against time in Afghanistan (
 The third plot shows mCPR (%) among married women against time in Kenya (country iso code 404) with the shaded areas representing 80% uncertainty intervals. 
 
 Note that in the example solution, `dat` refers to the processed data set with variables iso, year (referring to reference year), and cp (contraceptive_use_modern * 100). 
+
+Weidong and Omar helped me!
 
 ```{r}
 dat <- read_csv("contraceptive_use.csv")
@@ -157,5 +153,6 @@ plot_cp(dat, est, iso_code = 404, CI = 80)
 ## Exercise 2: GitHub
 
 Create a repo on your GitHub. Commit and push your Rmd and knitted html to your repo. Paste the link to your GitHub repo below.
+https://github.com/sarahmirza11/632HW1 
 
 
